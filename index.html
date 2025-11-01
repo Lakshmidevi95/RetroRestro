@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Retro Kitchen - Fine Dining Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Space+Grotesk:wght@300;400;500;700&family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">The Retro Kitchen</div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#chefs" class="nav-link">Chefs</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to<br><span>The Retro Kitchen</span></h1>
+            <p class="hero-subtitle">Where Nostalgia Meets Flavor</p>
+            <a href="#menu" class="cta-btn">Explore Our Menu</a>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Story</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>A Journey Through Time</h3>
+                    <p>Since 1975, The Retro Kitchen has been serving authentic dishes that transport you back to the golden era of dining. Our passion for classic flavors combined with modern culinary techniques creates an unforgettable experience.</p>
+                    <p>Every dish tells a story, every ingredient is carefully selected, and every meal is crafted with love. We believe in bringing people together through the universal language of good food.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h4>50+</h4>
+                            <p>Years of Excellence</p>
+                        </div>
+                        <div class="stat">
+                            <h4>100+</h4>
+                            <p>Signature Dishes</p>
+                        </div>
+                        <div class="stat">
+                            <h4>50K+</h4>
+                            <p>Happy Customers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="200" height="200" fill="#E8A87C"/>
+                            <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#C38D5C" font-size="16" font-family="Arial">Restaurant Interior</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Menu</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Timeless flavors, lovingly prepared</p>
+            </div>
+            <div class="menu-categories">
+                <button class="menu-btn active" data-category="all">All</button>
+                <button class="menu-btn" data-category="starters">Starters</button>
+                <button class="menu-btn" data-category="mains">Main Course</button>
+                <button class="menu-btn" data-category="desserts">Desserts</button>
+            </div>
+            <div class="menu-grid" id="menu-grid">
+                <!-- Starters -->
+                <div class="menu-item" data-category="starters">
+                    <div class="menu-item-image">
+                        <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="200" fill="#C38D5C"/>
+                            <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#fff" font-size="14">Bruschetta</text>
+                        </svg>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3>Classic Bruschetta</h3>
+                            <span class="price">$12</span>
+                        </div>
+                        <p>Toasted bread with fresh tomatoes, basil, and garlic</p>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="starters">
+                    <div class="menu-item-image">
+                        <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="200" fill="#E27D60"/>
+                            <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#fff" font-size="14">Soup</text>
+                        </svg>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3>Creamy Tomato Soup</h3>
+                            <span class="price">$10</span>
+                        </div>
+                        <p>Rich tomato soup with herbs and cream</p>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="starters">
+                    <div class="menu-item-image">
+                        <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="200" fill="#85DCBA"/>
+                            <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#fff" font-size="14">Salad</text>
+                        </svg>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3>Caesar Salad</h3>
+                            <span class="price">$14</span>
+                        </div>
+                        <p>Crisp romaine, parmesan, croutons, and Caesar dressing</p>
+                    </div>
+                </div>
+
+                <!-- Main Course -->
+                <div class="menu-item" data-category="mains">
+                    <div class="menu-item-image">
+                        <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="200" fill="#E8A87C"/>
+                            <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#fff" font-size="14">Steak</text>
+                        </svg>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3>Grilled Ribeye Steak</h3>
+                            <span class="price">$35</span>
+                        </div>
+                        <p>Premium ribeye with roasted vegetables and mashed potatoes</p>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="mains">
+                    <div class="menu-item-image">
+                        <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="200" fill="#C38D5C"/>
+                            <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#fff" font-size="14">Pasta</text>
+                        </svg>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3>Spaghetti Carbonara</h3>
+                            <span class="price">$22</span>
+                        </div>
+                        <p>Classic Italian pasta with pancetta and parmesan</p>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="mains">
+                    <div class="menu-item-image">
+                        <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="200" fill="#E27D60"/>
+                            <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#fff" font-size="14">Salmon</text>
+                        </svg>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3>Herb Crusted Salmon</h3>
+                            <span class="price">$28</span>
+                        </div>
+                        <p>Fresh Atlantic salmon with lemon butter sauce</p>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-item" data-category="desserts">
+                    <div class="menu-item-image">
+                        <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="200" fill="#85DCBA"/>
+                            <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#fff" font-size="14">Tiramisu</text>
+                        </svg>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3>Classic Tiramisu</h3>
+                            <span class="price">$10</span>
+                        </div>
+                        <p>Layers of coffee-soaked ladyfingers and mascarpone</p>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="desserts">
+                    <div class="menu-item-image">
+                        <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="200" fill="#E8A87C"/>
+                            <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#fff" font-size="14">Cake</text>
+                        </svg>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3>Chocolate Lava Cake</h3>
+                            <span class="price">$12</span>
+                        </div>
+                        <p>Warm chocolate cake with molten center and vanilla ice cream</p>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="desserts">
+                    <div class="menu-item-image">
+                        <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="200" fill="#C38D5C"/>
+                            <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#fff" font-size="14">Cheesecake</text>
+                        </svg>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3>New York Cheesecake</h3>
+                            <span class="price">$11</span>
+                        </div>
+                        <p>Creamy cheesecake with berry compote</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chefs Section -->
+    <section id="chefs" class="chefs">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meet Our Chefs</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Masters of culinary artistry</p>
+            </div>
+            <div class="chefs-grid">
+                <div class="chef-card">
+                    <div class="chef-image">
+                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="150" cy="150" r="150" fill="#E27D60"/>
+                            <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#fff" font-size="18">Chef Portrait</text>
+                        </svg>
+                    </div>
+                    <div class="chef-info">
+                        <h3>Marco Sullivan</h3>
+                        <p class="chef-role">Head Chef</p>
+                        <p class="chef-bio">30 years of experience in French and Italian cuisine. Award-winning chef passionate about traditional cooking methods.</p>
+                    </div>
+                </div>
+
+                <div class="chef-card">
+                    <div class="chef-image">
+                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="150" cy="150" r="150" fill="#85DCBA"/>
+                            <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#fff" font-size="18">Chef Portrait</text>
+                        </svg>
+                    </div>
+                    <div class="chef-info">
+                        <h3>Elena Rodriguez</h3>
+                        <p class="chef-role">Pastry Chef</p>
+                        <p class="chef-bio">Specializing in classic desserts with a modern twist. Trained in Paris and New York's finest patisseries.</p>
+                    </div>
+                </div>
+
+                <div class="chef-card">
+                    <div class="chef-image">
+                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="150" cy="150" r="150" fill="#C38D5C"/>
+                            <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#fff" font-size="18">Chef Portrait</text>
+                        </svg>
+                    </div>
+                    <div class="chef-info">
+                        <h3>James Chen</h3>
+                        <p class="chef-role">Sous Chef</p>
+                        <p class="chef-bio">Expert in Asian fusion and contemporary techniques. Bringing innovation to traditional recipes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Gallery</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">A glimpse into our world</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="300" fill="#E8A87C"/>
+                        <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#fff" font-size="16">Dish 1</text>
+                    </svg>
+                </div>
+                <div class="gallery-item">
+                    <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="300" fill="#E27D60"/>
+                        <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#fff" font-size="16">Dish 2</text>
+                    </svg>
+                </div>
+                <div class="gallery-item">
+                    <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="300" fill="#85DCBA"/>
+                        <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#fff" font-size="16">Interior</text>
+                    </svg>
+                </div>
+                <div class="gallery-item">
+                    <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="300" fill="#C38D5C"/>
+                        <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#fff" font-size="16">Dish 3</text>
+                    </svg>
+                </div>
+                <div class="gallery-item">
+                    <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="300" fill="#E8A87C"/>
+                        <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#fff" font-size="16">Ambiance</text>
+                    </svg>
+                </div>
+                <div class="gallery-item">
+                    <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="300" fill="#E27D60"/>
+                        <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#fff" font-size="16">Dish 4</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">We'd love to hear from you</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>📍 Location</h3>
+                        <p>123 Vintage Street<br>Downtown District<br>New York, NY 10001</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📞 Phone</h3>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>✉️ Email</h3>
+                        <p>hello@retrokitchen.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>🕐 Hours</h3>
+                        <p>Mon-Thu: 11:00 AM - 10:00 PM<br>
+                           Fri-Sat: 11:00 AM - 11:00 PM<br>
+                           Sunday: 10:00 AM - 9:00 PM</p>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="6" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>The Retro Kitchen</h3>
+                    <p>Bringing nostalgia and flavor together since 1975.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Retro Kitchen. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
